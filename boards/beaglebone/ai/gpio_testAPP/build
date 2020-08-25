@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo "Building The GPIO Test-APP"
+
+g++ -O2 -Wall LedSwiping.cpp SimpleGPIO.cpp -o LedSwiping 
+g++ -O2 -Wall InputButton.cpp SimpleGPIO.cpp -o InputButton 
+g++ -O2 -Wall InputButton_LedOn.cpp SimpleGPIO.cpp -o InputButton_LedOn 
